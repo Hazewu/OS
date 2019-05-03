@@ -71,7 +71,7 @@ void *passerbyS(void *p)
 int main(void)
 {
 	int i;
-	pthread_t tid[N];
+	pthread_t tid[N+S];
 	for(i=0;i<N;i++)
 	{
 		pthread_create(&tid[i],NULL,passerbyN,(void *)(&i));
